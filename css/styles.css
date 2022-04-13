@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@400;700&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* reset  default*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+:focus, :active {
+    outline: none;
+}
+a:focus, a:active {
+    outline: none;
+}
+nav, footer, header, aside {
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding:0;border:0;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+/* end reset default */
+
+html, body {
+    color:  hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    max-width: 1140px;
+    background-color: chocolate;
+}
+.container {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 1em
+}
+.cars {
+    padding: 0;
+}
+.cars__inner{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+.cars__item {
+    -ms-flex-preferred-size: 33.3333333%;
+        flex-basis: 33.3333333%;
+    padding: 3.133333333333em;
+    margin: 0px;
+}
+.cars__item_orange {
+    background-color: hsl(31, 77%, 52%);
+}
+.cars__item_cyan {
+    background-color: hsl(184, 100%, 22%);
+}
+.cars__item_dark {
+    background-color: hsl(179, 100%, 13%);
+}
+.cars__item_left-item-radius {
+    border-radius: 1em 0em 0em 1em;
+}
+.cars__item_middle-item-radius {
+    border-radius: 0em;
+}
+.cars__item_right-item-radius {
+    border-radius: 0em 1em 1em 0em;    
+}
+.cars__title {
+    text-transform: uppercase;
+    font-family: 'Big Shoulders Display', cursive;
+    padding: 1em 0em;
+}
+.cars__description {
+    padding-bottom: 5.66em;
+    line-height: 2;
+}
+.btn {
+    border-radius: 2em;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    padding: .98em;
+    background-color: hsl(0, 0%, 95%);
+    min-width: 150px;
+    text-align: center;
+    display: inline-block;
+}
+.btn:hover {
+    background-color: hsl(0, 0%, 95%, 0);
+    cursor: pointer;
+    color: hsl(0, 0%, 95%);
+}
+.btn_orange-text {
+    color: hsl(31, 77%, 52%);
+}
+.btn_cyan-text {
+    color: hsl(184, 100%, 22%);
+}
+.btn_dark-text {
+    color: hsl(179, 100%, 13%);
+}
+@media screen  and (max-width: 760px) {
+    .cars__item_middle-item-radius {
+        border-radius: 0em 1em 1em 0em;
+    }
+    .cars__item_right-item-radius {
+        border-radius: 0em 0em 1em 1em;    
+    }
+}
+@media screen  and (max-width: 535px) {
+    .cars__item_left-item-radius {
+        border-radius: 1em 1em 0em 0em;
+    }
+    .cars__item_middle-item-radius {
+        border-radius: 0em;
+    }
+    .cars__item_right-item-radius {
+        border-radius: 0em 0em 1em 1em;    
+    }
+}
